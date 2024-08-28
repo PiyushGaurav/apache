@@ -10,8 +10,8 @@ const App = () => {
 	return (
 		<div>
 			<h1>My ECharts Chart</h1>
-			<MultiChart />
 			<RoseTypePieChart />
+			<MultiChart />
 			<BasicBarChart />
 			<MultiSeriesBarChart />
 			<CustomizedBarChart />
