@@ -1,4 +1,5 @@
 import ReactECharts from 'echarts-for-react';
+import './AllBarCharts.scss';
 
 export default function CustomizedBarChart() {
 	const option = {
@@ -49,7 +50,7 @@ export default function CustomizedBarChart() {
 	return (
 		<div>
 			<h3>Customized Basic Bar Chart</h3>
-			<ReactECharts option={option} style={{ height: '400px', width: '100%' }} />
+			<ReactECharts option={option} style={{ width: '100%' }} />
 		</div>
 	);
 }

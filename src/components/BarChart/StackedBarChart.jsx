@@ -1,4 +1,5 @@
 import ReactECharts from 'echarts-for-react';
+import './AllBarCharts.scss';
 
 export default function StackedBarChart() {
 	const option = {
@@ -23,7 +24,7 @@ export default function StackedBarChart() {
 	return (
 		<div>
 			<h3>Stacked Bar Chart</h3>
-			<ReactECharts option={option} style={{ height: '400px', width: '100%' }} />
+			<ReactECharts option={option} style={{ width: '100%' }} />
 		</div>
 	);
 }

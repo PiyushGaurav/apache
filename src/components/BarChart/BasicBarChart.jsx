@@ -1,5 +1,5 @@
 import ReactECharts from 'echarts-for-react';
-
+import './AllBarCharts.scss';
 export default function BasicBarChart() {
 	const option = {
 		xAxis: {
@@ -16,8 +16,8 @@ export default function BasicBarChart() {
 
 	return (
 		<div>
-			<h3>Basic Bar Chart</h3>
-			<ReactECharts option={option} style={{ height: '400px', width: '100%' }} />
+			<h1>Basic Bar Chart</h1>
+			<ReactECharts option={option} className="chart-style" style={{ width: '100%' }} />;
 		</div>
 	);
 }

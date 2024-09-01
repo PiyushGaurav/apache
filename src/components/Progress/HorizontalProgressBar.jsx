@@ -1,6 +1,6 @@
-const HorizontalProgressBar = ({ title, progress, color }) => {
+export const HorizontalProgressBar = ({ title, progress, color }) => {
 	// Ensure progress is between 0 and 1
-	const clampedProgress = Math.max(0, Math.min(1, progress)) * 100;
+	const clampedProgress = Math.max(0, Math.min(1, progress / 100)) * 100;
 
 	const containerStyle = {
 		height: '30px',
@@ -36,7 +36,7 @@ const HorizontalProgressBar = ({ title, progress, color }) => {
 					fontWeight: 'bold'
 				}}
 			>
-				{progress}
+				{progress / 100}
 			</p>
 			<div style={containerStyle}>
 				<div style={progressBarStyle}></div>
@@ -44,5 +44,3 @@ const HorizontalProgressBar = ({ title, progress, color }) => {
 		</div>
 	);
 };
-
-export default HorizontalProgressBar;

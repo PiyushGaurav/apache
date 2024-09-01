@@ -1,0 +1,48 @@
+.root {
+	display: flex;
+	height: 100vh;
+
+	.sidebar {
+		width: 130px;
+		background-color: blue;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+
+		li {
+			list-style: none;
+		}
+
+		.item {
+			width: 100%;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			display: block;
+
+		}
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+
+		a:hover,
+		a:active {
+			color: white;
+			background-color: rgb(2, 2, 169);
+
+		}
+
+	}
+
+	.main {
+		display: flex;
+		flex: 1 1 0;
+		background-color: aqua;
+		overflow: scroll;
+	}
+}

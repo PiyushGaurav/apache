@@ -1,4 +1,5 @@
 import ReactECharts from 'echarts-for-react';
+import './AllBarCharts.scss';
 
 export default function MultiChart() {
 	const option = {
@@ -51,7 +52,7 @@ export default function MultiChart() {
 	return (
 		<div>
 			<h3>Stacked Bar Chart</h3>
-			<ReactECharts option={option} style={{ height: '500px', width: '100%' }} />
+			<ReactECharts option={option} style={{ width: '100%', height: '400px' }} />
 		</div>
 	);
 }

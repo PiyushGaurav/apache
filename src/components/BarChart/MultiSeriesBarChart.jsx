@@ -1,4 +1,5 @@
 import ReactECharts from 'echarts-for-react';
+import './AllBarCharts.scss';
 
 export default function MultiSeriesBarChart() {
 	const option = {

@@ -1,5 +1,5 @@
 import ReactECharts from 'echarts-for-react';
-import { useEffect } from 'react';
+import './AllBarCharts.scss';
 
 export default function RacingBarCharts() {
 	var data = [];
@@ -41,31 +41,10 @@ export default function RacingBarCharts() {
 		animationEasingUpdate: 'linear'
 	};
 
-	function run() {
-		var data = option.series[0].data;
-		for (var i = 0; i < data.length; ++i) {
-			if (Math.random() > 0.9) {
-				data[i] += Math.round(Math.random() * 2000);
-			} else {
-				data[i] += Math.round(Math.random() * 200);
-			}
-		}
-		myChart.setOption(option);
-	}
-
-	useEffect(() => {
-		let timer = setInterval(function () {
-			run();
-		}, 1000);
-		return () => {
-			clearInterval(timer);
-		};
-	});
-
 	return (
 		<div>
 			<h3>Stacked Bar Chart</h3>
-			<ReactECharts option={option} style={{ height: '400px', width: '100%' }} />
+			<ReactECharts option={option} style={{ width: '100%' }} />
 		</div>
 	);
 }
