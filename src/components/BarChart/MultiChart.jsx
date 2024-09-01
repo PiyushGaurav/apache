@@ -52,7 +52,7 @@ export default function MultiChart() {
 	return (
 		<div>
 			<h3>Stacked Bar Chart</h3>
-			<ReactECharts option={option} style={{ width: '100%', height: '400px' }} />
+			<ReactECharts option={option} style={{ width: '100%', height: '600px' }} />
 		</div>
 	);
 }

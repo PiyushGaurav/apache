@@ -114,5 +114,5 @@ export const RoseTypePieChart = ({ chartData }) => {
 		]
 	};
 
-	return <ReactECharts option={option} style={{ width, height, backgroundColor: 'white' }} />;
+	return <ReactECharts option={option} style={{ width: '100%', height, backgroundColor: 'white' }} />;
 };
